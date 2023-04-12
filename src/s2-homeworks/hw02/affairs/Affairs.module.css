@@ -1,7 +1,11 @@
+.todoContainer {
+    margin-left: 70px;
+}
 .buttonContainer {
     display: flex;
     gap: 24px;
     margin-bottom: 32px;
+    padding-top: 32px;
 }
 
 .all {
@@ -51,5 +55,12 @@
     display: flex;
     gap: 17px;
     flex-wrap: wrap;
+    max-width: 450px;
+}
+
+.affairsActive {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
     max-width: 450px;
 }

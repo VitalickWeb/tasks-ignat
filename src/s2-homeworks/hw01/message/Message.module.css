@@ -36,23 +36,6 @@
     background: #0066CC;
 }
 
-.text:before {
-    content: '';
-    position: absolute;
-    top: 37px;
-    left: 526px;
-    width: 0px;
-    height: 1px;
-    border: 18px solid transparent;
-    border-top: 0;
-    border-right: 15px solid white;
-    clip-path: polygon(90% -21%, 95% 89%, 100% 99%, 104% 0%, 66% -9%);
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-    transform: rotate(129deg);
-    z-index: 1;
-}
-
 .text:after {
     content: '';
     position: absolute;

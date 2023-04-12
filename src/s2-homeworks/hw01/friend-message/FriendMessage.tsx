@@ -7,7 +7,6 @@ export type FriendMessagePropsType = {
 }
 // создать тип вместо any и отобразить приходящие данные
 const FriendMessage = (props: FriendMessagePropsType) => {
-    console.log(props.message.id)
     return (
         <div
             id={'hw1-friend-message-' + props.message.id}
