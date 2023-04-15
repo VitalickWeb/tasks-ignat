@@ -1,35 +1,110 @@
 .greetingForm {
+    padding-left: 70px;
+    margin-bottom: 208px;
 }
 
 .inputAndButtonContainer {
+    display: flex;
 }
 
 .error {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #CC0000;
+
+    padding-top: 7px;
 }
 
 .input {
+    width: 372px;
+    height: 36px;
+    margin-right: 12px;
+
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+
+    padding: 8px 0 8px 12px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #333333;
 }
 
 .input:focus {
+    width: 372px;
+    height: 36px;
+    border: 1px solid #0066CC;
 }
 
 .errorInput {
+    width: 372px;
+    height: 36px;
+    margin-right: 12px;
+
+    border: 1px solid red;
+    outline: none;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .button {
+    width: 73px;
+    height: 35px;
+    background: #0066CC;
+    padding: 8px 24px 8px 24px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    vertical-align: top;
 }
 
 .button:focus {
+    outline: none; /* Убирает стандартный контур фокуса */
+    border: 2px solid blue; /* Устанавливает синюю рамку при фокусе */
+    background-color: yellow; /* Устанавливает желтый фон при фокусе */
+    color: #333333;
 }
 
 .button:active {
+    -webkit-box-shadow: 0px 0px 6px 1px rgba(34, 60, 80, 1) inset;
+    -moz-box-shadow: 0px 0px 6px 1px rgba(34, 60, 80, 1) inset;
+    box-shadow: 0px 0px 6px 1px rgba(34, 60, 80, 1) inset;
 }
 
 .button:disabled {
+    background: #0066CC;
+    opacity: 0.5;
+    border-radius: 3px;
+    color: #FFFFFF;
 }
 
 .text {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 31px;
+    margin-bottom: 5px;
 }
 
 .greeting {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #333333;
 }
