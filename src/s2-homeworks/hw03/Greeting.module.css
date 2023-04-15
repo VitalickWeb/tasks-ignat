@@ -49,6 +49,7 @@
     width: 372px;
     height: 36px;
     margin-right: 12px;
+    padding-left: 12px;
 
     border: 1px solid red;
     outline: none;
