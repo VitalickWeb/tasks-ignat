@@ -19,7 +19,6 @@
 }
 
 .inputWrapper {
-    width: 574px;
     display: flex;
     flex-direction: column;
 }
