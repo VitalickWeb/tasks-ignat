@@ -1,12 +1,10 @@
-.input:focus {
+.input.superInput:focus {
     width: 372px;
     height: 36px;
     border: 1px solid #0066CC;
 }
 
 .input {
-    width: 372px;
-    height: 36px;
     margin-right: 12px;
     padding: 8px 0 8px 12px;
 
@@ -24,9 +22,19 @@
 }
 
 .superInput {
-    color: slateblue;
-    font-family: 'Montserrat', sans-serif;
+    width: 372px;
+    height: 36px;
+    margin-right: 12px;
+    padding: 8px 0 8px 12px;
     letter-spacing: 1px;
+
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+    color: slateblue;
 }
 
 .errorInput {
@@ -35,7 +43,7 @@
     margin-right: 12px;
     padding-left: 12px;
 
-    border: 1px solid #D1D1D1;
+    /*border: 1px solid #CC1439;*/
     outline: none;
     border-radius: 5px;
     box-sizing: border-box;
@@ -46,8 +54,8 @@
     height: 36px;
     margin-right: 12px;
     padding-left: 12px;
-
     border: 1px solid #CC1439;
+
     outline: none;
     border-radius: 5px;
     box-sizing: border-box;
