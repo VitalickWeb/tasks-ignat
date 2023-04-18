@@ -52,8 +52,8 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
         + (spanClassName ? ' ' + spanClassName : '')
     const finalInputClassName = s.input
         + (error ? ' ' + s.errorInput : ' ' + s.superInput)
-        + (className ? ' ' + s.className : '') // задача на смешивание классов
-        + (restProps.value && s.spanClassName)
+        + (className ? ' ' + className : '') // задача на смешивание классов
+        + (restProps.value && spanClassName)
 
     return (
         <div className={s.inputWrapper}>
