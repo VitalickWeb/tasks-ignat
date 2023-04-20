@@ -1,25 +1,102 @@
 .sidebar {
+    display: none;
 }
 
 .sidebar.open {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0; /* Изменено на 0, чтобы сайдбар появлялся слева */
+    width: 317px;
+    height: 100vh;
+    background-color: #f8f8f8;
+
+    z-index: 1;
+
 }
 
 .background {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw; /* Изменено на 100vw, чтобы занимал весь экран */
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 10px 40px rgba(29, 33, 38, 0.13), 0px 1px 2px rgba(29, 33, 38, 0.1);
+
+    z-index: 1;
 }
 
 .nav {
+    position: fixed;
+    top: 0;
+    left: 0; /* Изменено на 0, чтобы навигация появлялась слева */
+    width: 317px;
+    height: 100vh;
+
+    padding: 63px 0 0 70px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .nav a {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-decoration: none;
+    color: #333333;
+
+    cursor: pointer;
+    margin-bottom: 45px;
+
+    transition: ease-in-out 300ms;
 }
 
 .nav a:hover {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #58ACFF;
+
+    text-decoration: none;
+    transition: ease-in-out 300ms;
+}
+
+.nav a:active {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+
+    color: #3D6B99;
 }
 
 .nav a.active {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-decoration-line: underline;
+    color: #0059B2;
 }
+
 .close {
+
 }
 
 .close img {
+    position: fixed;
+    top: 22px;
+    left: 266px;
+    cursor: pointer;
+    z-index: 2;
 }
+
+
