@@ -1,2 +1,6 @@
 .container {
+    padding-left: 70px;
+    padding-top: 32px;
+
+    display: flex;
 }
