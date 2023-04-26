@@ -3,7 +3,9 @@
     color: #FFFFFF;
     margin-right: 38px;
 }
-
+.button:last-child {
+    margin: 0;
+}
 .disabled {
     width: 132px;
     background: #004D99;
