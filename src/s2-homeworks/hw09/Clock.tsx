@@ -4,7 +4,7 @@ import {restoreState} from '../hw06/localStorage/localStorage'
 import s from './Clock.module.css'
 
 function Clock() {
-    const [timerId, setTimerId] = useState<NodeJS.Timeout | undefined>(undefined)
+    const [timerId, setTimerId] = useState<number | undefined>(undefined)
     // for autotests // не менять // можно подсунуть в локалСторэдж нужную дату, чтоб увидеть как она отображается
     const [date, setDate] = useState<Date>(new Date(restoreState('hw9-date', Date.now())))
     const [show, setShow] = useState<boolean>(false)
@@ -12,7 +12,7 @@ function Clock() {
     const start = () => {
         // пишут студенты // запустить часы (должно отображаться реальное время, а не +1)
         // сохранить ид таймера (https://learn.javascript.ru/settimeout-setinterval#setinterval)
-         const id = setInterval(() => {
+        const id: number = window.setInterval(() => {
             setDate(new Date())
         }, 1000)
         setTimerId(id)
@@ -25,10 +25,10 @@ function Clock() {
     }
 
     const onMouseEnter = () => { // пишут студенты // показать дату если наведена мышка
-        setShow(!show)
+        setShow(true)
     }
     const onMouseLeave = () => { // пишут студенты // спрятать дату если мышка не наведена
-        setShow(!show)
+        setShow(false)
     }
 
     const formatterTime = new Intl.DateTimeFormat('ru', {
@@ -36,25 +36,25 @@ function Clock() {
         minute: 'numeric',
         second: 'numeric'
     });
-    const stringTime = formatterTime.format(date) // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
+    const stringTime = formatterTime.format(date) || <br/> // часы24:минуты:секунды (01:02:03)/(23:02:03)/(24:00:00)/(00:00:01) // пишут студенты
 
     const formatterDate = new Intl.DateTimeFormat('ru', {
         day: 'numeric',
         month: 'numeric',
         year: 'numeric'
     });
-    const stringDate = formatterDate.format(date) // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
+    const stringDate = formatterDate.format(date) || <br/> // день.месяц.год (01.02.2022) // пишут студенты, варианты 01.02.0123/01.02.-123/01.02.12345 не рассматриваем
 
     // день недели на английском, месяц на английском (https://learn.javascript.ru/intl#intl-datetimeformat)
     const formatterDay = new Intl.DateTimeFormat('en', {
         weekday: 'long'
     });
-    const stringDay = formatterDay.format(date); // пишут студенты
+    const stringDay = formatterDay.format(date) || <br/>; // пишут студенты
 
     const formatterMonth = new Intl.DateTimeFormat('en', {
         month: 'long'
     });
-    const stringMonth = formatterMonth.format(date) // пишут студенты
+    const stringMonth = formatterMonth.format(date) || <br/> // пишут студенты
 
     return (
         <div className={s.clock}>
