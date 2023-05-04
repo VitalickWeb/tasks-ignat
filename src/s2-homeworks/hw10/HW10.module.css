@@ -1,0 +1,18 @@
+.loadingContainer {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #FFFFFF;
+
+    order: 0;
+    flex-grow: 0;
+
+    margin: 43px 0 260px 70px;
+}
+
+.button {
+    width: 140px;
+}
