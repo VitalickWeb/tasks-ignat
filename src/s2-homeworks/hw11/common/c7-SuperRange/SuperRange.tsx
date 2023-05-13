@@ -8,7 +8,6 @@ export type props = {
 
 const SuperRange: React.FC<SliderProps> = (props) => {
 
-    console.log(props)
     return (
         <Slider
             sx={{ // стили для слайдера // пишет студент

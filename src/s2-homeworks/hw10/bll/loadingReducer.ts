@@ -1,3 +1,5 @@
+import {typographyClasses} from "@mui/material";
+
 const initState = {
     isLoading: false,
 }
