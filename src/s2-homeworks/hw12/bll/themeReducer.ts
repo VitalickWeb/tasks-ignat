@@ -12,7 +12,6 @@ type ThemeAction = {
 }
 
 export const themeReducer = (state: ThemeState = initState, action: ThemeAction): ThemeState => { // fix any
-    console.log(state.themeId, action.id)
     switch (action.type) {
         // дописать
         case 'SET_THEME_ID':
