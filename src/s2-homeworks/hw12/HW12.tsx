@@ -38,25 +38,53 @@ const HW12 = () => {
         document.documentElement.dataset.theme = themeId + ''
     }, [themeId])
 
+    let selectClass
+    switch (themeId) {
+        case 1:
+            selectClass = s.select
+            break
+        case 2:
+            selectClass = s.selectBlue
+            break
+        case 3:
+            selectClass = s.selectDark
+            break
+        default:
+            selectClass = s.select
+    }
+
     return (
         <div id={'hw12'}>
             <div className={s2.hw}>
-            <div id={'hw12-text'} className={s2.hwTitle}>
-                Homework #12
-            </div>
-            <div className={s2.lineTop}></div>
 
-                <SuperSelect
-                    id={'hw12-select-theme'}
-                    className={s.select}
-                    // сделать переключение тем
-                    value={themeId}
-                    onChange={(e) => change(+e.currentTarget.value)}
-                    options={themes.map((theme) => ({
-                        id: theme.id,
-                        value: theme.value,
-                    }))}
-                />
+                {themeId === 3
+                    ? <div id={'hw12-text'} className={s2.hwTitleDark}>
+                        Homework #12
+                    </div>
+                    : <div id={'hw12-text'} className={s2.hwTitle}>
+                        Homework #12
+                    </div>}
+
+                <div className={s2.lineTop}></div>
+
+                <div className={s.selectBlock}>
+                    <div className={s.subTitleBox}>
+                        <span className={s.subTitle}>Выберете тему</span>
+                    </div>
+
+                    <SuperSelect
+                        id={'hw12-select-theme'}
+                        className={selectClass}
+                        // сделать переключение тем
+                        value={themeId}
+                        onChange={(e) => change(+e.currentTarget.value)}
+                        options={themes.map((theme) => ({
+                            id: theme.id,
+                            value: theme.value,
+                        }))}
+                    />
+
+                </div>
             </div>
         </div>
     )

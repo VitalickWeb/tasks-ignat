@@ -18,13 +18,36 @@ html {
     color: var(--color);
 }
 
+.selectBlock {
+    margin: 53px 0 244px 70px;
+}
+.subTitleBox {
+    margin-bottom: 6px;
+}
+
 .select {
     width: 171px;
     height: 36px;
     border: 1px solid #323232;
     border-radius: 2px;
 
-    margin: 53px 0 244px 70px;
+    padding: 8px 20px 10px 10px;
+
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #333333;
+}
+
+.selectBlue {
+    width: 171px;
+    height: 36px;
+    border: 1px solid #333333;
+    border-radius: 2px;
+
     padding: 8px 20px 11px 10px;
 
     font-family: Montserrat, sans-serif;
@@ -33,5 +56,24 @@ html {
     font-size: 14px;
     line-height: 17px;
 
-    color: #333;
+    color: #333333;
+    background-color: #DDEEFF;
+}
+
+.selectDark {
+    width: 171px;
+    height: 36px;
+    border: 1px solid #C2C2C2;
+    border-radius: 2px;
+
+    padding: 8px 20px 11px 10px;
+
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: #FFFFFF;
+    background-color: #212A34;
 }

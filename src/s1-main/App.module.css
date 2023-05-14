@@ -24,6 +24,18 @@
     margin-left: 70px;
 }
 
+.hwTitleDark {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    color: #FFFFFF;
+
+    padding-top: 37px;
+    margin-left: 70px;
+}
+
 .hw {
     width: 1280px;
     margin: 0 auto;
